@@ -1,3 +1,20 @@
+"""
+This question was to make BPE tokenizer,
+so BPE have two parts, one is training and second is encoding,
+so in training part, we need to find the most frequent pair of characters in the corpus,
+and then we need to merge that pair and then we need to repeat this process for the number of merges,
+and in encoding part, we need to encode the word using the merges we got from training part
+
+So i tried to do it, but i was not be able to do it properly,
+i was stuck on the part like how to get the characters of the word after merging,
+same thing happened in encoding part,
+so the output is not same,
+
+but i understand now the logic of BPE, i spent too much time on it,
+So i shifted my focus to next question
+"""
+
+
 def train(corpus, num_merges):
     # question have constraints on the corpus length
     if len(corpus) < 1 or len(corpus) > 5000:
