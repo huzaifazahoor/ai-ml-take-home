@@ -31,6 +31,7 @@ def schedule_tasks(W, tasks):
     schedule = list()
 
     for task_id, duration, priority, dependencies in tasks:
+
         if all(dep in [t[0] for t in schedule] for dep in dependencies):
             start_time = t
             end_time = start_time + duration
