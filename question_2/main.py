@@ -17,7 +17,7 @@ i was stuck on the part like how workers updated properly, plus later on i thoug
 instead of for loop, as for loop works on the sequintal, and while loop, we can only run a task whcih is free,
 and while loop will break, when all the tasks are done,
 
-task was to not use AI, so i didn't,
+task was to not use AI, but GitHub Copilot autocomplete suggested the main loop block, which i've marked in the code
 so i struggled alot and spent so much time,
 so i could not done it in time, then i shifted to next SQL question.
 So, let's hope for the best.
@@ -32,6 +32,7 @@ def schedule_tasks(W, tasks):
 
     for task_id, duration, priority, dependencies in tasks:
 
+        # this block is inserted by github co pilot
         if all(dep in [t[0] for t in schedule] for dep in dependencies):
             start_time = t
             end_time = start_time + duration
